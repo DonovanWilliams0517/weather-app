@@ -8,7 +8,7 @@ const weatherIcon = document.getElementById("weatherIcon");
 const errorMsg = document.getElementById("errorMsg");
 
 
-const API_KEY = "1b56e51c35c675c64d1b94a6f25d0c1c";
+const API_KEY = "YOUR_API_KEY_HERE";
 let currentUnit = "metric";
 
 
