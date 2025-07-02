@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .search-box {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 500px) {
+      .search-box {
+          flex-direction: column;
+      }
+
+      #cityInput,
+      #searchBtn {
+          width: 100%;
+      }
+  }
+  
+  #cityInput {
+    flex: 1;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  #searchBtn {
+    padding: 0.6rem 1rem;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #searchBtn:hover {
+    background-color: #357ABD;
+  }
+  
+  #weatherInfo {
+    margin-top: 1rem;
+  }
+  
+  #weatherIcon {
+    width: 80px;
+    margin-top: 0.5rem;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .unit-toggle {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+  }
+
+  .unit-toggle label {
+      cursor: pointer;
+  }
+
+  .unit-toggle input {
+      margin-right: 0.3rem;
+  }
+  
+  @media (max-width: 500px) {
+      h1 {
+          font-size: 1.5rem;
+      }
+
+      .container {
+          padding: 1.5rem;
+      }
+
+      .unit-toggle {
+          flex-direction: column;
+          gap: 0.5rem;
+      }
+
+      #weatherIcon {
+          width: 60px;
+      }
+
+      #temperature {
+          font-size: 1.5rem;
+      }
+  }
